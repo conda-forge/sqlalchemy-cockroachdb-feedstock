@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.6
     - psycopg2
-    - sqlalchemy <2.0.0
+    - sqlalchemy >=2.0.0
 
 test:
   imports:
