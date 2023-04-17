@@ -1,5 +1,5 @@
 {% set name = "sqlalchemy-cockroachdb" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sqlalchemy-cockroachdb-{{ version }}.tar.gz
-  sha256: bc3def9ea61c55ff7579cd9f75918a108af66db65981fcc2e638b6866fdaf0a7
-  patches:
-    - 0001-Specify-UTF-8-Encoding-when-reading-files-during-set.patch
+  sha256: ddb46e2da53d812bf7b8ef21c3cafb918004747f815a283f374796bf57a9497a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
