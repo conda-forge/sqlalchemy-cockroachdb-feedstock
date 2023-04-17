@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sqlalchemy-cockroachdb-{{ version }}.tar.gz
   sha256: ddb46e2da53d812bf7b8ef21c3cafb918004747f815a283f374796bf57a9497a
-  patches:
-    - 0001-Specify-UTF-8-Encoding-when-reading-files-during-set.patch
 
 build:
   noarch: python
